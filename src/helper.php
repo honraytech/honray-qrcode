@@ -1,5 +1,4 @@
 <?php
-
 // +----------------------------------------------------------------------
 // | Author: honray <tech@honraytech.com>
 // +----------------------------------------------------------------------
@@ -18,7 +17,8 @@ function make_qrcode($content, $filename, $size = 4, $level = "L") {
  	if(empty($content)||empty($filename)){
  		return 'content或fieldname为空';
  	}
- 	$QRcode = new \think\qrcode\PHPQrcode\phpqrcode\QRcode();
+ 	import('qrcode.PHPQrcode.phpqrcode');
+ 	$QRcode = new \QRcode();
  	$path = "./uploads/qrcode/".$filename.".png";
  	$QRcode->png($content, $path, $level, $size);
  	$url = "uploads/Qrcode/".$filename.".png";
