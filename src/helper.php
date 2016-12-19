@@ -20,7 +20,7 @@ function make_qrcode($content, $filename, $size = 4, $level = "L") {
  	import('honray.tp5-qrcode.src.PHPQrcode.phpqrcode', VENDOR_PATH, '.php');
  	$QRcode = new \QRcode();
 
- 	if(!is_dir('./uploads/qrcode/')){
+ 	if (!is_dir('./uploads/qrcode/')) {
  		@mkdir('./uploads/qrcode/');
  		@chmod('./uploads/qrcode/', 0777);
  	}
