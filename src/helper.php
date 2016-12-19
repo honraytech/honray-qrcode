@@ -14,7 +14,7 @@
 **/
 
 function make_qrcode($content, $filename, $size = 4, $level = "L") { 	
- 	if(empty($content)||empty($filename)){
+ 	if (empty($content)||empty($filename)) {
  		return 'content或fieldname为空';
  	}
  	import('honray.tp5-qrcode.src.PHPQrcode.phpqrcode', VENDOR_PATH, '.php');
