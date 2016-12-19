@@ -25,8 +25,7 @@ function make_qrcode($content, $filename, $size = 4, $level = "L") {
  		@chmod('./uploads/qrcode/', 0777);
  	}
 
- 	$path = "./uploads/qrcode/".$filename.".png";
- 	$QRcode->png($content, $path, $level, $size);
- 	$url = "uploads/qrcode/".$filename.".png";
- 	return $url;
+ 	$path = "uploads/qrcode/".$filename.".png";
+ 	$QRcode->png($content, './'.$path, $level, $size);
+ 	return $path;
 }
