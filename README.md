@@ -14,6 +14,7 @@ thinkphp5 生成二维码类库
 
 #####执行方法make_qrcode($content, $filename, $size = 4, $level = "L")
 
+
 * 生成二维码
 * -------------------------------------------------------------------------
 * @param string $content 内容，必须
