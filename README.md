@@ -1,5 +1,5 @@
 # honray-qrcode
-thinkphp5 生成二维码类库
+thinkphp5 系统生成二维码函数
 
 ## 安装
 
